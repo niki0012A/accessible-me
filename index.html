@@ -16,15 +16,15 @@
   <div class="container">
     <header class="site-header" role="banner">
       <h1>Jam Box Studios</h1>
-      <div class="main-nav" role="navigation">
+      <div class="main-nav" role="navigation" aria-label="Main Navigation">
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Products</a></li>
-          <li><a href="#">Reservation</a></li>
-          <li><a href="#">Studio</a></li>
+          <li><a href="#" aria-label="visit home page">Home</a></li>
+          <li><a href="#" aria-label="visit products page">Products</a></li>
+          <li><a href="#" aria-label="visit a reservaion page">Reservation</a></li>
+          <li><a href="#" aria-label="visit a studio page">Studio</a> </li>
         </ul>
       </div>
-      <img src="https://placekitten.com/1200/900" class="banner">
+      <img src="https://placekitten.com/1200/900" class="banner" alt="banner image with kitten">
     </header>
     <main class="main-content" role="main">
       <h1>Welcome to Jam Box</h1>
@@ -47,21 +47,23 @@
         </p>
       </div>
       <div class="contact-section">
-        <h1>Contact Us</h1>
+        <h2>Contact Us</h2>
         <form action="thanks.html">
-          <label>Full Name</label>
-          <input type="text" placeholder="Full Name">
-          <input type="text" placeholder="Email">
-          <input type="text" placeholder="Subject">
-          <b>Your Message</b>
-          <textarea></textarea>
+          <label for="full-name">Full Name</label>
+            <input type="text" id="full-name" name="full-name" placeholder="Full Name">
+          <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Email">
+          <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Subject">
+          <label for="message">Your Message</label>
+          <textarea id="message" name="message"></textarea>
           <button type="submit">Send</button>
         </form>
       </div>
     </main>
     <footer class="site-footer" role="contentinfo">
       &copy; 2021 Jam Box Studios
-    </fooer>
+    </footer>
   </div>
 </body>
 
